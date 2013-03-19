@@ -1,5 +1,5 @@
-:- module(solver, [person/2, is_over_25/1]).
+:- module(solver, [person/2, is_driver/1]).
+:- dynamic person/2.
 
-person(Name,Age).
-
-is_over_25(Name).
+is_driver(Name) :-
+  person(Name, driver).
